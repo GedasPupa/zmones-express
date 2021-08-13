@@ -1,0 +1,22 @@
+{
+  "name": "zmones-express",
+  "version": "1.0.0",
+  "description": "Educational ExpressJS project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "web-server",
+    "handlebars"
+  ],
+  "author": "Gedas Pupa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
