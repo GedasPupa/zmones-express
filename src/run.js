@@ -128,6 +128,11 @@ app.post('/zmogus/:id', async (req, res) => {
         }
 
         const index = zmones.findIndex(zm => zm.id == id);
+        if (index === -1) {
+            res.render('nera', {id});
+            return;
+        }
+
         zmones[index] = zmogus;
 
         await writeFile(DATA_FILE, JSON.stringify(zmones, null, 3), {
