@@ -1,0 +1,17 @@
+{{#if zmogus}}
+<h2>Informacija apie zmogu</h2>
+
+{{#with zmogus}}
+    <form action="/zmogus/{{id}}" method="POST">
+        <input type="hidden" value={{id}} name="id" />
+        Vardas: <input type="text" value={{vardas}} name="vardas" /><br>
+        Pavarde: <input type="text" value={{pavarde}} name="pavarde" /><br>
+        Alga: <input type="text" value={{alga}} name="alga" /><br>
+        <input type="submit" value="Save">
+    </form>
+
+{{/with}}
+{{else}}
+<h2>Nepazystu as tu draugu</h2>
+{{/if}}
+<a href="/">Back</a>
